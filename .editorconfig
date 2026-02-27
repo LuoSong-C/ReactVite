@@ -1,0 +1,39 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+# Unix-style newlines with a newline ending every file
+end_of_line = lf
+insert_final_newline = true
+
+# Set default charset
+charset = utf-8
+
+# Indentation style
+indent_style = space
+indent_size = 2
+
+# Tab width
+# tab_width = 2
+
+# Trim trailing whitespace
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.{js,jsx,ts,tsx}]
+indent_style = space
+indent_size = 2
+
+[*.{json,yml,yaml,css,scss,less}]
+indent_style = space
+indent_size = 2
+
+[*.{py,java,c,cpp,csharp,go,rust}]
+indent_style = space
+indent_size = 4

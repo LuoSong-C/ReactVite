@@ -1,0 +1,104 @@
+#app {
+  width: 100%;
+  height: 100%;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  line-height: inherit;
+}
+
+.iconfont {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/* --- 核心重置样式（抹平浏览器差异） --- */
+
+/* 1. 盒模型重置：让 padding 和 border 不会撑大元素宽度，布局的基础 */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+/* 2. 基础 HTML 设置：确保字体平滑、一致的行高，以及禁用移动端点击高亮 */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 3. 标题与段落重置：移除默认 margin，并将标题字号重置为继承，方便用 Tailwind 类控制 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* 4. 列表重置：移除列表默认的圆点和内边距 */
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 5. 图片与多媒体重置：解决了图片底部间隙问题，并确保响应式 */
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 6. 表单元素重置：让 input/button 继承父级字体，并移除按钮默认样式 */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+  cursor: pointer;
+}
